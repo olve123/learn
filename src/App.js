@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 let defaultTextColor = '#fff';
 let defaultStyle = {
-    color: defaultTextColor
+    color: "#FFF"
 };
 class Aggregate extends Component{
     render() {
@@ -27,7 +27,7 @@ class Filter extends Component{
 class Playlist extends Component{
     render(){
         return(
-            <div style = {defaultStyle}>
+            <div style = {{...defaultStyle, display: 'inline-block', width: "25%"}}>
                 <img/>
                 <h3>PlaylistName</h3>
                 <ul>
@@ -44,11 +44,14 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1 style={{color: defaultTextColor}}>Title</h1>
+        <h1 style = {defaultStyle}>Title</h1>
           <Aggregate/>
           <Aggregate/>
           <Filter/>
           <Playlist/>
+          <Playlist/>
+          <Playlist/>
+
       </div>
     );
   }
