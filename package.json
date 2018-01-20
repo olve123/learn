@@ -1,6 +1,9 @@
 {
   "name": "playlist",
   "version": "0.1.0",
+  "engines": {
+    "node": "8.9.1"
+  },
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
@@ -13,4 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
+
 }
